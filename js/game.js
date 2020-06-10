@@ -1,5 +1,5 @@
 var src = document.getElementById("f0");
-var num = 30;
+var num = 10;
 var dur = 1.5;
 var startX = function(){ return $('.container').width()/2+(-75+80*Math.random()) }
 var endY = function(){ return $('.container').height()/1.3 }
@@ -9,8 +9,8 @@ function startFire(){
 		var _f = src.cloneNode(true);
     _f.id = String("flame"+i);
 		document.getElementById("fire").appendChild(_f);
-		if      (i%3) _f.style.backgroundImage = "url()";
-		else if (i%2) _f.style.backgroundImage = "url(./images/fire-back-2.png)";
+		if      (i%3) _f.style.backgroundImage = "url(../images/fire-back.png)";
+		else if (i%2) _f.style.backgroundImage = "url(../images/fire-back-2.png)";
 		loop(_f, i/num );
 	}
   src.style.display='none';

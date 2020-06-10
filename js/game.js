@@ -86,6 +86,9 @@ window.addEventListener("load", function () {
 
   screen2.addEventListener("mousedown", function (e) {
     isPressed = true;
+    var touchobj = e.changedTouches[0];
+    var dist = parseInt(touchobj.clientY);
+    startPoint1 = dist;
   });
 
   screen2.addEventListener("mouseup", function (e) {
@@ -99,11 +102,13 @@ window.addEventListener("load", function () {
     var touchobj = e.changedTouches[0];
     var dist = parseInt(touchobj.clientY);
     startPoint1 = dist;
-    console.log(startPoint1);
   });
 
   screen2.addEventListener("touchstart", function (e) {
     isPressed = true;
+    var touchobj = e.changedTouches[0];
+    var dist = parseInt(touchobj.clientY);
+    startPoint1 = dist;
   });
 
   screen2.addEventListener("touchend", function (e) {

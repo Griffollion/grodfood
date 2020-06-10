@@ -97,7 +97,7 @@ function shuffle(arr){
     var papper = document.createElement("img");
     shuffle(fallingClasses);
     var addedClass =  fallingClasses[0];
-    papper.src = "../images/papper.png";
+    papper.src = "./images/papper.png";
     papper.classList.add(addedClass);
     article.append(papper);
   }

@@ -1,0 +1,75 @@
+.screen-3 .screen-3__link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 240px;
+    height: 400px;
+    pointer-events: none;
+}
+
+.screen-3 .screen-3__texts {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.screen-3 .screen-3__text-1 {
+    transition: opacity .25s;
+}
+
+.screen-3 .screen-3__text-1.invisible {
+    opacity: 0;
+}
+
+.screen-3 .screen-3__text-2 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1.4s;
+}
+
+.screen-3 .screen-3__text-2.visible {
+    opacity: 1;
+}
+
+.screen-3 .screen-3__big-papper {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.screen-3 .screen-3__fire {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 240px;
+    height: 400px;
+}
+
+.screen-3 .screen-3__button {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.screen-3 .screen-3__papper-container {
+    position: absolute;
+    left: 90px;
+    bottom: 67px;
+    z-index: 3;
+}
+
+.screen-3 .screen-3__papper {
+
+    transform: rotate(40deg) scale(0.8);
+}

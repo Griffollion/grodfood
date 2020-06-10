@@ -1,0 +1,105 @@
+.screen-2 * {
+    pointer-events: none;
+}
+
+.screen-2 .screen-2__hand {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    
+}
+
+.screen-2 .screen-1__text-2 {
+    width: 240px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.screen-2 .screen-1__progress-container {
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    width: 220px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.screen-2 .screen-1__progress-fire {
+    position: absolute;
+    left: 10px;
+    top: -23px;
+    z-index: 5;
+    transition: transform .4s;
+}
+
+.screen-2 .screen-1__progress-wrapper {
+    background-color: #fff;
+    height: 25px;
+    border-radius: 26px;
+    padding: 3px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.screen-2 .screen-1__progres {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 20px;
+    width: 40px;
+    border-radius: 20px;
+    z-index: 2;
+    background-image: -moz-linear-gradient( 0deg, rgb(0,161,30) 0%, rgb(128,198,16) 30%, rgb(255,235,1) 50%, rgb(253,149,21) 70%, rgb(251,62,40) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(0,161,30) 0%, rgb(128,198,16) 30%, rgb(255,235,1) 50%, rgb(253,149,21) 70%, rgb(251,62,40) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(0,161,30) 0%, rgb(128,198,16) 30%, rgb(255,235,1) 50%, rgb(253,149,21) 70%, rgb(251,62,40) 100%);
+    max-width: calc(100% - 6px);
+    transition: width .4s;
+}
+
+.falling,
+.falling-1,
+.falling-2,
+.falling-3 {
+    position: absolute;
+    left: 30%;
+    top: 90%;
+}
+
+.falling {
+    animation: fall 2s linear both;
+}
+
+.falling-1 {
+    animation: fall1 2s linear both;
+} 
+.falling-2 {
+    animation: fall2 2s linear both;
+} 
+
+.falling-3 {
+    animation: fall3 2s linear both;
+} 
+@keyframes fall {
+    0%{transform: translate(-50%, 0) rotate(0);}
+    100%{transform: translate(-50%,450px) rotate(360deg);}
+}
+
+@keyframes fall1 {
+    0%{transform: translate(-50%, 0) rotate(90deg);}
+    100%{transform: translate(-50%,450px) rotate(360deg);}
+}
+
+@keyframes fall2 {
+    0%{transform: translate(-50%, 0) rotate(180deg);}
+    100%{transform: translate(-50%,450px) rotate(360deg);}
+}
+
+@keyframes fall3 {
+    0%{transform: translate(-50%, 0) rotate(270deg);}
+    100%{transform: translate(-50%,450px) rotate(360deg);}
+}

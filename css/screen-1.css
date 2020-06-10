@@ -1,0 +1,74 @@
+.screen-1 .screen-1__img-1 {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+
+.screen-1 .screen-1__info {
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen-1 .screen-1__info-arrow-up {
+    padding-bottom: 10px;
+}
+
+.screen-1 .screen-1__info-arrow-down {
+    padding-top: 10px;
+}
+
+
+.screen-1 .screen-1__text-2 {
+    width: 240px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.screen-1 .screen-1__progress-container {
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    width: 220px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.screen-1 .screen-1__progress-fire {
+    position: absolute;
+    left: 10px;
+    top: -23px;
+    z-index: 5;
+}
+
+.screen-1 .screen-1__progress-wrapper {
+    background-color: #fff;
+    height: 25px;
+    border-radius: 26px;
+    padding: 3px;
+    width: 100%;
+    position: relative;
+}
+
+.screen-1 .screen-1__progres {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 20px;
+    width: 40px;
+    border-radius: 20px;
+    z-index: 2;
+    background-image: -moz-linear-gradient( 0deg, rgb(0,161,30) 0%, rgb(128,198,16) 30%, rgb(255,235,1) 50%, rgb(253,149,21) 70%, rgb(251,62,40) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(0,161,30) 0%, rgb(128,198,16) 30%, rgb(255,235,1) 50%, rgb(253,149,21) 70%, rgb(251,62,40) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(0,161,30) 0%, rgb(128,198,16) 30%, rgb(255,235,1) 50%, rgb(253,149,21) 70%, rgb(251,62,40) 100%);
+}
+
+  

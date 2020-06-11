@@ -8,6 +8,10 @@
     pointer-events: none;
 }
 
+.screen-3.active .screen-3__link {
+    pointer-events: auto;
+}
+
 .screen-3 .screen-3__texts {
     position: absolute;
     top: 85px;

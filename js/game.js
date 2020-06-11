@@ -86,9 +86,7 @@ window.addEventListener("load", function () {
 
   screen2.addEventListener("mousedown", function (e) {
     isPressed = true;
-    var touchobj = e.changedTouches[0];
-    var dist = parseInt(touchobj.clientY);
-    startPoint1 = dist;
+    startPoint1 = e.pageY;
   });
 
   // screen2.addEventListener("mouseup", function (e) {

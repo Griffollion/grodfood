@@ -91,9 +91,9 @@ window.addEventListener("load", function () {
     startPoint1 = dist;
   });
 
-  screen2.addEventListener("mouseup", function (e) {
-    isPressed = false;
-  });
+  // screen2.addEventListener("mouseup", function (e) {
+  //   isPressed = false;
+  // });
 
   screen1.addEventListener("touchstart", function (e) {
     isPressed = true;
@@ -111,9 +111,9 @@ window.addEventListener("load", function () {
     startPoint1 = dist;
   });
 
-  screen2.addEventListener("touchend", function (e) {
-    isPressed = false;
-  });
+  // screen2.addEventListener("touchend", function (e) {
+  //   isPressed = false;
+  // });
 
   //вспомогательная функция
   function putToCache(elem, cache) {
